@@ -4,13 +4,21 @@ body {
     
     font-family: "Times New Roman";
     font-size: 18px;
+    text-align: center
 }
 
+li {
+    text-align: left
+}
+
+.multicolumn__container{
+    display: flex; 
+}
 h1 {
     margin: 0;
     padding: 20px 0;
     text-shadow: 0px 12px 5px deepskyblue;
-    text-align: center
+    text-align: center;
   
 }
 
@@ -23,7 +31,8 @@ h1 {
 }
 
 ul {
-    padding-left: 0;
+    padding-left: 1;
+    
 }
 
 p { 
@@ -34,14 +43,19 @@ p {
 
 li {
     font-style: italic;
+
 }
 
 
-.centered {
+.idea1  {
     padding: 10px 10px 10px 10px;
     border: 5px solid;
     margin: 0 auto 0 auto;
+    width: 89%
+/*
+    margin: 0 auto 0 auto;
     width: 80%;
+*/
     
     /* margin-left: 20px;
     margin-right: 20px;
@@ -50,7 +64,8 @@ li {
 }
 
 h1:hover {
-    background-color: deepskyblue
+    background-color: yellow;
+    
 }
 
 nav {
@@ -60,7 +75,7 @@ nav {
 
 .flexboxmasterswitch {
     display: flex;
-     flex-direction: column;
+/*     flex-direction: column;*/
 }
 
 .diff-font {
@@ -82,11 +97,6 @@ header nav li {
 }
 
 
-a {
-    color: white;
-}
-
-
 a:hover {
     color: deepskyblue;
 }
@@ -102,3 +112,56 @@ footer {
         flex-direction: column;
     }    
 }
+
+* { 
+    box-sizing: border-box; 
+    margin: 0; 
+}
+
+html {
+    color: #ccc;
+}
+
+body {
+/*    min-height: 100vh;*/
+}
+
+h1 {
+    color: #fff;
+/*    text-transform: uppercase; */
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+a {
+    color: #fff;
+    font-size: 1.2em;
+    transition: background-color .3s, color .3s;
+    text-decoration: none;
+/*    text-transform: uppercase; */
+}
+
+a:hover {
+    color: #aaa;
+}
+
+
+/*
+@media screen and (max-width: 40rem) {
+    .container,
+    header, 
+    main, 
+    footer {
+        flex-direction: column;
+    }    
+*/
+}
+
+ul {
+    padding-left: 0;
+}
+
+
